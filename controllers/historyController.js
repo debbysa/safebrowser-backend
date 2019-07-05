@@ -2,7 +2,7 @@ const History = require("../models/History");
 
 module.exports = {
   index: function(req, res) {
-    History.findAl().then(function(rows) {
+    History.find().then(function(rows) {
       res.json(rows);
     });
   },
