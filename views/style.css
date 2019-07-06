@@ -31,7 +31,7 @@ body {
 
 .illustration {
   height: 75vh;
-  background: url("http://localhost:3000/img/background.png");
+  background: url("/img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
