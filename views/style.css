@@ -1,0 +1,41 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.head {
+  height: 25vh;
+  padding-top: 35px;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  color: #363636;
+  padding-left: 7%;
+}
+
+.title2 {
+  margin-top: -12px;
+}
+
+.text-403 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #3c0d6c;
+  padding-right: 4% !important;
+  font-size: 3em;
+}
+
+.logo {
+  height: 14vh;
+}
+
+.illustration {
+  height: 75vh;
+  background: url("/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kids {
+  height: 75vh;
+}
