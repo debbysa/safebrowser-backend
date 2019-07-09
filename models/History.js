@@ -5,7 +5,9 @@ const historySchema = mongoose.Schema(
     title: String,
     url: String
   },
-  { timestamps: true }
+  {
+    timestamps: { createdAt: true, updateAt: false }
+  }
 );
 
 module.exports = mongoose.model("History", historySchema);
