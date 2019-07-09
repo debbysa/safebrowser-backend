@@ -6,7 +6,7 @@ const historySchema = mongoose.Schema(
     url: String
   },
   {
-    timestamps: { createdAt: true, updateAt: false }
+    timestamps: { createdAt: true, updatedAt: false }
   }
 );
 
