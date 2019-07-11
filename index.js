@@ -15,6 +15,7 @@ app.use(express.static("public"));
 
 app.use("/", require("./router/webPage403Router"));
 app.use("/history", require("./router/historyRouter"));
+app.use("/blocked", require("./router/blockedUrlRouter"));
 
 app.listen(process.env.PORT || 3000, function() {
   console.log("server running on port 3000");
