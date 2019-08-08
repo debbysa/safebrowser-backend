@@ -4,7 +4,7 @@ const blockedUrlSchema = mongoose.Schema(
   {
     title: String,
     url: String,
-    pluginCode: Number
+    pluginCode: String
   },
   {
     timestamps: { createdAt: true, updatedAt: false }
