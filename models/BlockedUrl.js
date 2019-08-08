@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 const blockedUrlSchema = mongoose.Schema(
   {
     title: String,
-    url: String
+    url: String,
+    pluginCode: Number
   },
   {
     timestamps: { createdAt: true, updatedAt: false }
