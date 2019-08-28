@@ -27,5 +27,11 @@ module.exports = {
     BlockedUrl.findByIdAndDelete(req.params.id).then(function(row) {
       res.json(row);
     });
+  },
+
+  details: function(req, res) {
+    BlockedUrl.findById(req.params.pluginCode).then(function(row) {
+      res.json(row);
+    });
   }
 };

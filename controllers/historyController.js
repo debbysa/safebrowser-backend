@@ -10,5 +10,10 @@ module.exports = {
     History.create(req.body).then(function(row) {
       res.json(row);
     });
+  },
+  delete: function(req, res) {
+    History.findByIdAndDelete(req.params.id).then(function(row) {
+      res.json(row);
+    });
   }
 };
