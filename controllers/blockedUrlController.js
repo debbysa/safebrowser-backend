@@ -30,8 +30,12 @@ module.exports = {
   },
 
   details: function(req, res) {
-    BlockedUrl.findById(req.params.pluginCode).then(function(row) {
-      res.json(row);
+    BlockedUrl.findOne({ pluginCode: req.params.pluginCode }, function(
+      err,
+      rows
+    ) {
+      if (err) return console.error(err);
+      res.json(rows);
     });
   }
 };
